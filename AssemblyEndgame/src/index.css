@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Hanken Grotesk", Arial, sans-serif;
+  background-color: #262626;
+  color: #d9d9d9;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper {
+  display: grid;
+  justify-items: center;
+  align-content: center;
+  gap: 2.25rem;
+  border: 1px solid #d9d9d9b3;
+  padding: 3.6rem 1rem;
+  border-radius: 0.5rem;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.top {
+  display: grid;
+  gap: 1.25rem;
+  max-width: 352px;
+}
+
+.gameGuide {
+  display: grid;
+  gap: 4px;
+  text-align: center;
+}
+
+.gameGuide h1 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26.06px;
+  color: #f9f4da;
+}
+
+.gameGuide p {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18.24px;
+  color: #8e8e8e;
+}
+
+.status {
+  padding-block: 6px;
+  border-radius: 4px;
+  /* background: #10a95b; */
+  text-align: center;
+  color: #f9f4da;
+  font-weight: 500;
+  min-height: 58.91px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.status p:first-child {
+  font-size: 20px;
+  line-height: 26.06px;
+}
+
+.status p:last-child {
+  font-size: 16px;
+  line-height: 20.85px;
+}
+
+.languageContainer {
+  max-width: 280px;
+  gap: 1.5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.language {
+  position: relative;
+  padding: 4.5px;
+  border-radius: 3px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15.64px;
+  text-align: center;
+  color: #f9f4da;
+}
+
+.language.lost::before {
+  content: "💀";
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  font-size: 0.85rem;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.wordElementContainer {
+  display: flex;
+  gap: 2px;
+}
+
+.alphabetElement {
+  width: 40px;
+  height: 40px;
+  background: #323232;
+  padding: 6px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23.45px;
+  text-align: center;
+  border-bottom: 1px solid #f9f4da;
+}
+
+.keyboardContainer {
+  max-width: 480px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  margin-top: 0.5rem;
+}
+
+.keyboardKey {
+  width: 40px;
+  height: 40px;
+  gap: 6px;
+  padding: 6px;
+  /* background: #fcba29; */
+  border: 1px solid #d7d7d7;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.keyboardKey:disabled{
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.newGameBtn {
+  background-color: #11b5e5;
+  border: 1px solid #d7d7d7;
+  border-radius: 4px;
+  width: 225px;
+  height: 40px;
+  padding: 6px 12px;
+  display: block;
+  margin-inline: auto;
+  cursor: pointer;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
