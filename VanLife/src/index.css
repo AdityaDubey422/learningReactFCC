@@ -1,0 +1,185 @@
+:root{
+  --border-radius: 3px;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #fff7ed;
+  padding-block: 1rem;
+}
+
+#root {
+  max-width: 548px;
+  min-height: calc(100vh - 2rem);
+  margin-inline: auto;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-top-left-radius: var(--border-radius);
+  border-top-right-radius: var(--border-radius);
+}
+
+header {
+  padding: 26px 35px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  a {
+    text-decoration: none;
+  }
+}
+
+.logo {
+  font-weight: 900;
+  font-size: 25.35px;
+  line-height: 40.27px;
+  a {
+    color: #000000;
+  }
+}
+
+header > nav > ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22.92px;
+  a {
+    color: #4d4d4d;
+  }
+}
+
+.homeMain {
+  background-image: url("https://s3-alpha-sig.figma.com/img/050a/aa4a/9b62f902c3de6d1b54b3a5d23341752c?Expires=1741564800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=p7Av-F5JifPUeKV60fygVp2j0AYC7gubbVxvTxV5cW5J6esQKFbbSa8TwxX~HRS259JxeXnOUFaahOHiPkTpdPsBrXCZf9U88NOPzgmA3n7qvY7EPAPD2BJb8ZzMMTfoPId067j3VCsX0gzEH94tBSHmo2S2zOQl1rJAfYXVTlUEo3DeJOl4A5iU9~PIoFXYu31L9zbmkGQKO4xteL9OAw1OX0CivNdRhYfQvnVVj8Lj3EmPjDzImMAWQts3t9s1nqVmktxTdsstU0QAsoIkUuJhU6lZ8~~p9lcG0BW8TI54uq4sX6f-CGlbR1oR1QTS5LaUoCToF0pV1jknSzmXew__");
+  background-position-y: -48px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 387px;
+  position: relative;
+  padding: 65px 27px;
+  color: #ffffff;
+}
+
+.homeMain::before {
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #000000;
+  opacity: 0.46;
+}
+
+.homeMain > * {
+  position: relative;
+  z-index: 2;
+}
+
+.homeMain > h2 {
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 42px;
+  color: #ffffff;
+  margin-bottom: 23px;
+}
+
+.homeMain > p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 56px;
+}
+
+.homeMain > a {
+  display: block;
+  cursor: pointer;
+  background-color: #ff8c38;
+  border-radius: 5px;
+  padding-block: 10px;
+  width: 100%;
+  border: none;
+  font-family: Inter;
+  font-weight: 700;
+  font-size: 15.95px;
+  line-height: 31.66px;
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+}
+footer {
+  background-color: #252525;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22.92px;
+  align-items: center;
+  text-align: center;
+  color: #aaaaaa;
+  border-bottom-left-radius: var(--border-radius);
+  border-bottom-right-radius: var(--border-radius);
+}
+
+.aboutMainContent {
+  padding: 50px 27px;
+  color: #161616;
+}
+.aboutMain img {
+  height: 233px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.aboutMain h2 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38px;
+  margin-bottom: 31px;
+}
+.aboutMain .para {
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+  margin-bottom: 55px;
+}
+
+.cta {
+  padding: 32px 37px;
+  background-color: #ffcc8d;
+  border-radius: 5px;
+}
+
+.cta h3 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  margin-bottom: 25px;
+}
+
+.cta a {
+  display: block;
+  width: fit-content;
+  cursor: pointer;
+  background-color: #161616;
+  border-radius: 10px;
+  padding: 13px 22px;
+  border: none;
+  font-weight: 700;
+  font-size: 15.95px;
+  line-height: 23.92px;
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+}
